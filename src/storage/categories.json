@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Роллы",
+    "imgUrl": "https://ekb.sushi-market.com/img/rolls_i.png"
+  },
+  {
+    "title": "Горячие роллы",
+    "imgUrl": "https://ekb.sushi-market.com/img/hot_rolls_menu_icon.png"
+  },
+  {
+    "title": "Наборы",
+    "imgUrl": "https://ekb.sushi-market.com/img/kits_i.png"
+  },
+  {
+    "title": "Салаты",
+    "imgUrl": "https://ekb.sushi-market.com/img/salads_i.png"
+  },
+  {
+    "title": "Напитки",
+    "imgUrl": "https://ekb.sushi-market.com/img/potables_i.png"
+  }
+]

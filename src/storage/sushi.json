@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Суши с лососем",
+    "descr": "Рис, лосось с/с",
+    "price": 39,
+    "weight": 32,
+    "imgUrl": "https://ekb.sushi-market.com/upload/resize_cache/iblock/ff2/236_179_1/ff2a88de6ba5c280a0c2c80a631ea9c8.png"
+  },
+  {
+    "id": 2,
+    "title": "Суши с угрем",
+    "descr": "Рис, угорь, нори",
+    "price": 39,
+    "weight": 32,
+    "imgUrl": "https://ekb.sushi-market.com/upload/resize_cache/iblock/73c/236_179_1/73c1a829f5d11c289a98675f677fdf00.png"
+  },
+  {
+    "id": 3,
+    "title": "Филадельфия лайт",
+    "descr": "Лосось с/с, сыр сливочный, рис, нори, лук зеленый",
+    "price": 35,
+    "weight": 32,
+    "imgUrl": "https://ekb.sushi-market.com/upload/resize_cache/iblock/52c/236_179_1/52c43b34742c8d91a96771b23149021b.png"
+  },
+  {
+    "id": 5,
+    "title": "Лава",
+    "descr": "Лосось с/с, имитация краба, сыр сливочный, рис, нори, свежий огурчик",
+    "price": "27",
+    "weight": "33",
+    "imgUrl": "https://ekb.sushi-market.com/upload/resize_cache/iblock/444/236_179_1/444c18a5cf4801514db6db632c1c7532.png"
+  },
+  {
+    "id": 6,
+    "title": "Аляска",
+    "descr": "Лосось терияки, сыр сливочный, рис, нори, свежий огурчик, кунжут.",
+    "price": "27",
+    "weight": "33",
+    "imgUrl": "https://ekb.sushi-market.com/upload/resize_cache/iblock/6a4/236_179_1/6a4f627f46cd798765575c0036a5e05e.png"
+  },
+  {
+    "id": 7,
+    "title": "Филадельфия люкс",
+    "descr": "Лосось с/с, рис, нори, сыр сливочный, свежий огурчик, икра Тобико.",
+    "price": "29",
+    "weight": "33",
+    "imgUrl": "https://ekb.sushi-market.com/upload/resize_cache/iblock/9ef/236_179_1/9ef897590b3cc09edc3acfd003028ed0.png"
+  }
+]
