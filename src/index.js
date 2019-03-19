@@ -13,7 +13,7 @@ const serverConfig = require('../server-config');
 const admin = serverConfig.admin;
 const secret_key = serverConfig.secret_key;
 
-app.use((req, res, next) => {
+app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   next();
@@ -46,7 +46,7 @@ app.post('/login', urlencodedParser, function(req, res) {
   }
 })
 
-app.post('/admin/set', jsonParser, ensureToken, (req, res) => {
+app.post('/admin/set', jsonParser, ensureToken, function(req, res) {
   jwt.verify(req.token, secret_key, function(err, data){
     if (err) {
       res.sendStatus(403);
@@ -70,8 +70,8 @@ function ensureToken(req, res, next) {
   }
 }
 
-app.get('/api/rolls/', (req, res) => {
-  fs.readFile('./src/storage/sushi.json', 'utf-8', (err, data) => {
+app.get('/api/rolls/', function(req, res) {
+  fs.readFile('./src/storage/sushi.json', 'utf-8', function(err, data) {
     if(err) {
       console.log('ошибка ссука');
       throw err

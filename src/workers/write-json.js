@@ -15,13 +15,13 @@ function writeData(item, callback) {
     id: generateId(),
     ...item
   }
-  fs.readFile(path, 'utf-8', (err, data) => {
+  fs.readFile(path, 'utf-8', function(err, data) {
     const parseData = JSON.parse(data);
     const newData = [
       ...parseData,
       newItem
     ];
-    fs.writeFile(path, JSON.stringify(newData, null, 2), (error) => {
+    fs.writeFile(path, JSON.stringify(newData, null, 2), function(error) {
       if(!error) {
         callback();
       }
