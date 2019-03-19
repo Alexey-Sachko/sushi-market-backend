@@ -35,7 +35,7 @@ app.post('/login', urlencodedParser, function(req, res) {
     };
 
     // Создаем новый токен
-    const token = jwt.sign({ payload }, secret_key, tokenOptions); 
+    const token = jwt.sign(payload, secret_key, tokenOptions); 
 
     // Отправляем токен пользователю
     res.json({
