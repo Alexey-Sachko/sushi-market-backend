@@ -4,12 +4,14 @@ const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-const { writeData } = require('./workers/write-json');
+const writeWorker = require('./workers/write-json');
 
 const jsonParser = express.json();
 const urlencodedParser = bodyParser.urlencoded({extended: false})
 
-const { secret_key, admin } = require('../server-config');
+const serverConfig = require('../server-config');
+const admin = serverConfig.admin;
+const secret_key = serverConfig.secret_key;
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -49,7 +51,7 @@ app.post('/admin/set', jsonParser, ensureToken, (req, res) => {
     if (err) {
       res.sendStatus(403);
     } else {
-      writeData(req.body, function() {
+      writeWorker.writeData(req.body, function() {
         res.json(req.body);
       });
     }
