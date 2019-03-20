@@ -4,12 +4,12 @@ const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-const writeWorker = require('./src/workers/write-json');
+const writeWorker = require('./workers/write-json');
 
 const jsonParser = express.json();
 const urlencodedParser = bodyParser.urlencoded({extended: false})
 
-const serverConfig = require('./server-config');
+const serverConfig = require('../server-config');
 const admin = serverConfig.admin;
 const secret_key = serverConfig.secret_key;
 
