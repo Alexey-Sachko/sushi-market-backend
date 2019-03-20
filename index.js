@@ -81,6 +81,7 @@ app.get('/api/rolls/', function(req, res) {
 });
 
 const port = 80;
-app.listen(port, function() {
+const host = 'localhost';
+app.listen(port, host, function() {
   console.log('Сервер запущен на:' + port);
 });
